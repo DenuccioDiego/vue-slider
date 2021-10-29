@@ -11,13 +11,10 @@
      
      <div id="root">
           
-          <div v-for="item in items" :key="item.text">
-               {{ item.text }}
-          </div>
+          <div v-for="item in items" :key="item.image">
+               <img :src="'../asset/img/'+ item.image"/>
+          </div> 
           
-
-          
-
      </div>
 
 
