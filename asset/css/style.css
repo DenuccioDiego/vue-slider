@@ -3,12 +3,6 @@
      margin: 0;
      box-sizing: border-box;   }
 
-.container_immagini_piccole{
-     width: 20%;
-     background-color: blueviolet;
-     position: relative;  
-}
-
 .container{
      display: flex;
      height: 500px;
@@ -18,29 +12,54 @@
      width: 80%;
      background-color: beige;        }
 
-.immagini_carosello{
-     filter: brightness(0.55);    
+.container_immagini_piccole{
+     width: 20%;
+     background-color: blueviolet;
+     position: relative;  }
+
+.fas{
+     text-align: center;
      width: 100%;
-     display: block;    }
+     font-size: 50px;
+     color: grey;      }
 
 .immagine_principale{
      background-size:cover;
      background-repeat: no-repeat;
      height: 100%;
      background-position: center ;
-     position: relative;     }    
+     position: relative;     }
+
+.descrizione_immagine{
+     position: absolute;
+     right: 0;
+     bottom: 0;
+     text-align: end;
+     padding: 2rem;
+     color: white;        }
+
+.immagini_carosello{
+     /* height: calc(100% / 5);  RIMOSSO PERCHè NON RIUSABILE SE CAMBIA LA LUNGHEZZA DELL'ARRAY  , RISOLTO GUARDARE FILE main.js righa43 */
+     filter: brightness(0.55);    
+     width: 100%;
+     display: block;    }
+
+#illuminata{
+     filter: brightness(1) ; 
+     border: inset 2px white;  }
 
 #su{
      top: 5%;     }
-     
+
 #giù{
      bottom: 5%;    }
-     
+
 .arrows{
      position: absolute;
      left: calc(50% - 25px);
      z-index: 1;   }
-     
+
 .arrows:hover{
      cursor: pointer;  }
+     
           

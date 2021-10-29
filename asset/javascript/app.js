@@ -1,7 +1,7 @@
 var app = new Vue({
      el: '#root',
      data: {
-          counter : 4,
+          counter : 0,
 
           items: [{
                image: '01.jpg',

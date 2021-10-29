@@ -14,15 +14,21 @@
           <div class="container">
 
                <div id="container_immagine_grande">
-                    <div class="immagine_principale" v-if="counter == index" v-for="(item, index) in items" :key="item.image" :style="{'background-image':'url(../asset/img/'+ item.image +')'}"> </div>
+                    <div class="immagine_principale" v-if="counter == index" v-for="(item, index) in items" :key="item.image" :style="{'background-image':'url(../asset/img/'+ item.image +')'}"> 
+                    <div class="descrizione_immagine" v-if="counter == index" v-for="(item, index) in items" :key="item.text"><h1>{{item.title}}</h1><span>{{item.text}}</span></div>
+                        
+                    
+                    
+                    </div>
 
 
                </div>
 
                <div class="container_immagini_piccole">
                     
-                    <img  class="immagini_carosello" v-for="item in items" :key="item.image" :src="'../asset/img/'+ item.image" v-bind:style="{height: 'calc(100% / ' + items.length + ')'}"/>
-                   
+                    <img  class="immagini_carosello"  v-for="(item, index) in items" :key="item.image" :src="'../asset/img/'+ item.image" v-bind:style="{height: 'calc(100% / ' + items.length + ')'}"/>
+                    
+
                     <div v-on:click="counter -= 1" class="arrows" id="su">
                          <i class="fas fa-chevron-circle-up"></i>
                     </div>
