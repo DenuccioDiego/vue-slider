@@ -35,7 +35,18 @@ var app = new Vue({
           }
 
           ]
-        }
+     },
+     
+     methods: {
+
+          cronometro : setInterval(() => {
+               app.counter++
+               if(app.counter == app.items.length){
+                    app.counter = 0
+               }
+
+          }, 3000)
+     }
    })
 
    
