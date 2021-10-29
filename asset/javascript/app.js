@@ -1,6 +1,8 @@
 var app = new Vue({
      el: '#root',
      data: {
+          counter : 4,
+
           items: [{
                image: '01.jpg',
                title: 'Svezia' ,

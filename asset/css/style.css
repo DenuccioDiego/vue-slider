@@ -28,3 +28,18 @@
      height: 100%;
      background-position: center ;
      position: relative;     }    
+
+#su{
+     top: 5%;     }
+     
+#giù{
+     bottom: 5%;    }
+     
+.arrows{
+     position: absolute;
+     left: calc(50% - 25px);
+     z-index: 1;   }
+     
+.arrows:hover{
+     cursor: pointer;  }
+          
