@@ -26,10 +26,19 @@
                     <div v-on:click="counter -= 1" class="arrows" id="su">
                          <i class="fas fa-chevron-circle-up"></i>
                     </div>
+
+                    <div v-if="counter == 0" v-on:click="counter = items.length-1" class="arrows" id="su">
+                         <i class="fas fa-chevron-circle-up"></i>
+                    </div>
      
                     <div v-on:click="counter += 1" class="arrows" id="giù">
                          <i class="fas fa-chevron-circle-down"></i>
                     </div>
+
+                    <div v-if="counter == items.length-1" v-on:click="counter = 0" class="arrows" id="giù">
+                         <i class="fas fa-chevron-circle-down"></i>
+                    </div>
+
                </div>
           </div>
      </div>
