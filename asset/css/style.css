@@ -1,3 +1,23 @@
 #root{
      color: brown;
 }
+
+.container_immagini_piccole{
+     width: 20%;
+     background-color: blueviolet;
+     position: relative;  
+}
+
+.container{
+     display: flex;
+     height: 500px;
+     width: 1200px;      }
+
+ #container_immagine_grande{
+     width: 80%;
+     background-color: beige;        }
+
+ .immagini_carosello{
+     filter: brightness(0.55);    
+     width: 100%;
+     display: block;    }
