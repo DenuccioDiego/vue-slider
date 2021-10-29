@@ -11,16 +11,17 @@
      
      <div id="root">
           <div class="container">
-              <div id="container_immagine_grande">
 
-              </div>
+               <div id="container_immagine_grande">
+                    <div class="immagine_principale" v-for="item in items" :key="item.image" :style="{backgroundImage:`url(./asset/img/ + ${items.image})`}"> </div>
+
+
+               </div>
+
                <div class="container_immagini_piccole">
                     <img  class="immagini_carosello" v-for="item in items" :key="item.image" :src="'../asset/img/'+ item.image" v-bind:style="{ height: ['calc(100% / 5)']}"/>
                </div>
           </div>
-          
-          
-          <!-- style="height:calc(100% / ${items.length}) -->
      </div>
 
 

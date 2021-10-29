@@ -13,11 +13,18 @@
      height: 500px;
      width: 1200px;      }
 
- #container_immagine_grande{
+#container_immagine_grande{
      width: 80%;
      background-color: beige;        }
 
- .immagini_carosello{
+.immagini_carosello{
      filter: brightness(0.55);    
      width: 100%;
      display: block;    }
+
+.immagine_principale{
+     background-size:cover;
+     background-repeat: no-repeat;
+     height: 100%;
+     background-position: center ;
+     position: relative;     }    
