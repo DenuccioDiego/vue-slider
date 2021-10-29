@@ -10,7 +10,13 @@
 <body>
      
      <div id="root">
-          <div> {{message}} </div>
+          
+          <div v-for="item in items" :key="item.text">
+               {{ item.text }}
+          </div>
+          
+
+          
 
      </div>
 
