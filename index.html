@@ -21,7 +21,7 @@
 
                <div class="container_immagini_piccole">
                     
-                    <img  class="immagini_carosello" v-bind:class="(contatore == index) ? 'illuminata' : 'myFalseClass'" v-for="(item, index) in items" :key="item.image" :src="'../asset/img/'+ item.image" v-bind:style="{height: 'calc(100% / ' + items.length + ')'}"/>
+                    <img  class="immagini_carosello" v-bind:class="(counter == index) ? 'illuminata' : 'myFalseClass'" v-for="(item, index) in items" :key="item.image" :src="'../asset/img/'+ item.image" v-bind:style="{height: 'calc(100% / ' + items.length + ')'}"/>
                     
 
                     <div v-on:click="counter -= 1" class="arrows" id="su">
